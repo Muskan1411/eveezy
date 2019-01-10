@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+	
+</head>
+<body>
+	<!-- <section class="section-class text-center">
+		<div class="overlay">
+			<div class="container-fluid">
+				<div class="main-text text-center">
+					<div>
+						<form>
+							<input type="text" name="" class="name-input text-center" placeholder="Parents name"><span class="normal-font">invites you to the wedding of their</span><br>
+							<input type="text" name="" placeholder="son/daughter" class="text-center">
+							<br><span class="normal-font"> with </span> <br>
+							<input type="text" name="" placeholder="son/daughter" class="text-center">
+						</form>
+					</div>
+					<div>
+						<span class="normal-font">to their wedding celebration <br> on </span>
+					</div>
+					<div>
+						<input type="text" name="" placeholder="day ,date" class="text-center">	<br>
+						<input type="text" name="" placeholder="venue" class="text-center">	
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!-- start preloader -->
+  <div class="navbar-div">
+  	<nav class="navbar navbar-expand-md navbar-fixed-top">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="index.html">EventEzY</a>
+	    </div>
+	    
+	    
+	      <ul class="nav navbar-nav ml-auto">
+	        <li class="nav-item"><button class="btn editSite" value="edit"><i class="fa fa-edit"></i> Edit this site</button></li>
+	       
+	      </ul>
+	    
+	  </div>
+	</nav>
+  </div>
+
+  <div class="preloader"> </div>
+  
+  <!-- end preloader -->
+	<section class="hero text-center">
+    <div class="hero-slider hero-slider-s1">
+      <div class="slide-item"> <img src="https://www.shaadidukaan.com/free-wedding-templates/design1/images/slider/temp1.jpg" alt class="slider-bg"> </div>
+    </div>
+    <div class="wedding-announcement">
+      <div class="couple-name-merried-text">
+        <h2 class="wow slideInUp" data-wow-duration="1s"><input type="text" class="bride-groom text-center" placeholder="Bride & Groom" disabled="true"></h2>
+        <div class="married-text wow fadeIn" data-wow-delay="1s">
+          <h4 class=""> <span class=" wow fadeInUp" data-wow-delay="1.05s">W</span> <span class=" wow fadeInUp" data-wow-delay="1.10s">e</span> <span class=" wow fadeInUp" data-wow-delay="1.15s">'</span> <span class=" wow fadeInUp" data-wow-delay="1.20s">r</span> <span class=" wow fadeInUp" data-wow-delay="1.25s">e</span> <span>&nbsp;</span> <span class=" wow fadeInUp" data-wow-delay="1.30s">g</span> <span class=" wow fadeInUp" data-wow-delay="1.35s">e</span> <span class=" wow fadeInUp" data-wow-delay="1.40s">t</span> <span class=" wow fadeInUp" data-wow-delay="1.45s">t</span> <span class=" wow fadeInUp" data-wow-delay="1.50s">i</span> <span class=" wow fadeInUp" data-wow-delay="1.55s">n</span> <span class=" wow fadeInUp" data-wow-delay="1.60s">g</span> <span>&nbsp;</span> <span class=" wow fadeInUp" data-wow-delay="1.65s">m</span> <span class=" wow fadeInUp" data-wow-delay="1.70s">a</span> <span class=" wow fadeInUp" data-wow-delay="1.75s">r</span> <span class=" wow fadeInUp" data-wow-delay="1.80s">r</span> <span class=" wow fadeInUp" data-wow-delay="1.85s">i</span> <span class=" wow fadeInUp" data-wow-delay="1.90s">e</span> <span class=" wow fadeInUp" data-wow-delay="1.95s">d</span> </h4>
+        </div>
+        
+      </div>
+      <div class="save-the-date">
+        <h4>Save the date</h4>
+        <span class="date"><input type="text" class="wedding-date text-center" placeholder="Day, Date" disabled="true"></span>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="avtar-section">
+  	<div>
+  		<div class="clearfix"><a href="#collapse-avtar" class="btn float-right pt-2 collapse-link" data-toggle="collapse" id="collapse-button">Hide/Show</a></div>
+  		<div class="collapse show" id="collapse-avtar">
+	    	<div class="row justify-content-center">
+	    		<div class="col-md-6 col-10">
+				    <div class="avatar-upload">
+				        <div class="avatar-edit">
+				            <input type='file' id="imageUpload1" accept=".png, .jpg, .jpeg" disabled="true"/>
+				            <label for="imageUpload1"></label>
+				        </div>
+				        <div class="avatar-preview">
+				            <div id="imagePreview1" style="background-image: url(./img/bride.png);">
+				            </div>
+				        </div>
+				        <div class="text-center mt-3 bride-groom-avtar-text">
+				        	Bride
+				        </div>
+				    </div>
+			    </div>
+			    <div class="col-md-6 col-10">
+				    <div class="avatar-upload">
+				        <div class="avatar-edit">
+				            <input type='file' id="imageUpload2" accept=".png, .jpg, .jpeg" disabled="true"/>
+				            <label for="imageUpload2"></label>
+				        </div>
+				        <div class="avatar-preview">
+				            <div id="imagePreview2" style="background-image: url(./img/groom.png);">
+				            </div>
+				        </div>
+				        <div class="text-center mt-3 bride-groom-avtar-text">
+				        	Groom
+				        </div>
+				    </div>
+			    </div>
+			</div>
+		</div>
+  	</div>
+  </section>
+
+  <!-- venue section -->
+  <section class="venue-section p-5">
+  	<div>
+  		<h3 class="display-4 text-center">
+  			The Details
+  		</h3>
+  	</div>
+  	<div class="row justify-content-center" style="text-align: center;">
+  		<div class="col-md-6 col-12">
+  			<div class="text-center fa-venue-icons"><i class="fa fa-clock-o"></i></div>
+  			<div class="when-where-text">When</div>
+  			<div >
+  				<input type="text" name="" placeholder="Sep 23, 2020, 6:00" class="text-center" disabled="true">
+  			</div>
+  		</div>
+  		<div class="col-md-6 col-12">
+  			<div class="text-center fa-venue-icons"><i class="fa fa-map-marker"></i></div>
+  			<div class="when-where-text">Where</div>
+  			<div class="text-center">
+  				<textarea name="" placeholder="Northridge Church\n
+500 Terry A Francois Blvd, San Francisco,\n CA 94158, USA" class="text-center" disabled="true"></textarea>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="rsvp-div text-center">
+  		<button id="hide">
+  			HIDE RSVP
+  		</button>
+  		<button  id="show">
+  			SHOW RSVP
+  		</button>
+  		<div id="rsvp-link-input">
+  			<input type="text" name="" placeholder="Enter link" class="mt-3 text-center" disabled="true">
+  		</div>
+	  	<div class="text-center">
+	  		<button class="rsvp-button py-2 px-5">RSVP</button>
+	  	</div>
+  	</div>
+  </section>
+
+  <!-- itinerary section -->
+  <section class="itinerary-section text-center">
+  	<div class="clearfix"><a href="#collapse-itinerary" class="btn float-right pt-2 collapse-link" data-toggle="collapse" id="collapse-button">Hide/Show</a></div>
+  	<div  class="collapse show py-5" id="collapse-itinerary">
+  		<div>
+  		<h3 class="display-4"><i class="fa fa-calendar"></i>
+  		Itinerary</h3>
+  	</div>
+  	<!-- <div class="row justify-content-center" style="text-align: center;">
+  		<div class="col-md-3 col-6">
+  			<input type="text" name="" placeholder="Date" class="form-control text-center">
+  			<input type="text" name="" placeholder="Time" class="form-control text-center">
+  			<input type="text" name="" placeholder="Event" class="form-control text-center">
+  		</div>
+  		<div class="col-md-3 col-6">
+  			<input type="text" name="" placeholder="Date" class="form-control text-center">
+  			<input type="text" name="" placeholder="Time" class="form-control text-center">
+  			<input type="text" name="" placeholder="Event" class="form-control text-center">
+  		</div>
+  		<div class="col-md-3 col-6">
+  			<input type="text" name="" placeholder="Date" class="form-control text-center">
+  			<input type="text" name="" placeholder="Time" class="form-control text-center">
+  			<input type="text" name="" placeholder="Event" class="form-control text-center">
+  		</div>
+  		<div class="col-md-3 col-6">
+  			<input type="text" name="" placeholder="Date" class="form-control text-center">
+  			<input type="text" name="" placeholder="Time" class="form-control text-center">
+  			<input type="text" name="" placeholder="Event" class="form-control text-center">
+  		</div>
+  	</div> -->
+  	<div class="row">
+	  <div class="col-md-6 mb-1"> 
+	  	<input type='button' value='Add Button' id='addButton' disabled="true">
+	  </div>
+	  <div class="col-md-6 mb-1"> 
+	  	<input type='button' value='Remove Button' id='removeButton' disabled="true">
+	  </div>
+	</div>
+	<div id='TextBoxesGroup' class="mt-3">
+		
+	</div>
+</div>
+  </section>
+
+  <footer id="mu-footer" role="contentinfo">
+			<div class="row">
+				<div class="mu-footer-area col-md-6 col-12">
+					Hosted By: XYZ<br>
+					Contact: XXXXXXXXXX<br>
+					Email: xyz@gmail.com<br>
+				</div>
+				<div class="mu-footer-area col-md-6 col-12">
+					<div class="mu-footer-top">
+						<div class="mu-social-media">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-google-plus"></i></a>
+							
+							<a href="#"><i class="fa fa-youtube"></i></a>
+						</div>
+					</div>
+					<div class="mu-footer-bottom">
+						<p class="mu-copy-right">&copy; Copyright <a rel="nofollow" href="">KS Tech Soln.</a>. All right reserved.</p>
+					</div>
+				</div>
+			</div>
+
+	</footer>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

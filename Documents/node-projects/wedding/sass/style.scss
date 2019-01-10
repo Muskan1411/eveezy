@@ -1,0 +1,737 @@
+@import "variable";
+/*.section-class {
+  background: url("../img/wedding1.png") center no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+  background-size: 100%; }
+  .section-class .main-text {
+    background-color: #fff;
+    margin-left: 400px;
+    -webkit-box-shadow: 0 5px 10px #DC9202;
+    box-shadow: 0 5px 10px #DC9202; }
+
+.normal-font {
+  color: #DC9202;
+  font-size: 2.5rem;
+  font-family: 'Charm', cursive; }*/
+html,body {
+	overflow-x: hidden;
+}
+input[type="text"] { 
+  background: none;
+  border: none;
+  color: #fff;
+   }
+ textarea {
+ 	width: 300px;
+ 	background: none;
+ 	height: 100px;
+ 	border: none;
+ 	color: #fff;
+ }
+
+.navbar-brand {
+	color: $color1;
+	letter-spacing: 1.5px;
+	font-size: 20px;
+}
+
+
+
+.nav-link {
+	font-size: 14px;
+	letter-spacing: 2px;
+	&:hover {
+		color: $color1;
+	}
+}
+
+.editSite{
+	background-color: $color1;
+	color: $color2;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	&:hover {
+		color: $color2;
+	}
+}
+ /////////////////main section/////////////////
+ /////////////////////////////////////////////
+
+
+ .hero ::placeholder,.venue-section ::placeholder {
+  color: $color2;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: $color2;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: $color2;
+}
+.bride-grrom {
+  width: 450px;
+  font-size: 5rem;
+}
+.wedding-date {
+  width: 200px;
+  font-size: 2rem;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+  }
+/*** header style 2 ****/
+/*--------------------------------------------------------------
+
+#0.4  hero slider
+
+--------------------------------------------------------------*/
+.hero {
+  position: relative;
+  height: calc(100vh - 90px);
+  min-height: 500px;
+  overflow: hidden;
+  /** slider controls **/
+  /*** arrow hover ***/
+}
+
+@media (max-width: 1199px) {
+  .hero {
+    min-height: 600px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero {
+    min-height: 500px;
+  }
+}
+
+.hero .slide-item {
+  height: 100vh;
+  min-height: 700px;
+  position: relative;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+@media (max-width: 1199px) {
+  .hero .slide-item {
+    min-height: 600px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero .slide-item {
+    min-height: 500px;
+  }
+}
+
+/*.hero .slide-item .slider-bg {
+  display: none;
+}*/
+
+.hero .slide-item:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.hero .slide-item:focus {
+  outline: none;
+}
+
+.hero .slide-item .container {
+  height: 100%;
+  display: table;
+}
+
+.hero .slide-item .row {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.hero .slick-prev,
+.hero .slick-next {
+  background-color: rgba(94, 154, 142, 0.6);
+  width: 50px;
+  height: 50px;
+  z-index: 111;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 5px rgba(94, 154, 142, 0.9);
+  box-shadow: 0 0 0 5px rgba(94, 154, 142, 0.9);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.hero .slick-prev:hover,
+.hero .slick-next:hover {
+  background-color: rgba(94, 154, 142, 0.8);
+  -webkit-box-shadow: 0 0 0 5px #C3272B;
+  box-shadow: 0 0 0 5px #C3272B;
+}
+
+@media (max-width: 1199px) {
+  .hero .slick-prev,
+  .hero .slick-next {
+    width: 45px;
+    height: 45px;
+    -webkit-box-shadow: 0 0 0 3px rgba(94, 154, 142, 0.9);
+    box-shadow: 0 0 0 3px rgba(94, 154, 142, 0.9);
+  }
+}
+
+@media (max-width: 991px) {
+  .hero .slick-prev,
+  .hero .slick-next {
+    width: 35px;
+    height: 35px;
+    -webkit-box-shadow: 0 0 0 3px rgba(94, 154, 142, 0.9);
+    box-shadow: 0 0 0 3px rgba(94, 154, 142, 0.9);
+  }
+}
+
+.hero .slick-prev:before,
+.hero .slick-next:before {
+  font-size: 25px;
+  font-size: 1.38889pxrem;
+}
+
+@media (max-width: 991px) {
+  .hero .slick-prev:before,
+  .hero .slick-next:before {
+    font-size: 20px;
+    font-size: 1.11111pxrem;
+  }
+}
+
+.hero .slick-prev {
+  left: 0;
+}
+
+.hero .slick-prev:before {
+  font-family: "FontAwesome";
+  content: "\f104";
+  opacity: 1;
+}
+
+.hero .slick-next {
+  right: 0;
+}
+
+.hero .slick-next:before {
+  font-family: "FontAwesome";
+  content: "\f105";
+  opacity: 1;
+}
+
+.hero:hover .slick-prev,
+.hero:hover .slick-next {
+  opacity: 1;
+}
+
+.hero:hover .slick-prev {
+  left: 20px;
+}
+
+.hero:hover .slick-next {
+  right: 20px;
+}
+
+.hero .wedding-announcement {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 101;
+  text-align: center;
+  display: table;
+  /*** save the date ***/
+  /*** popup save the date circle ***/
+}
+
+.hero .wedding-announcement .couple-name-merried-text {
+  display: table-cell;
+  vertical-align: middle;
+padding-bottom:100px;
+}
+
+.hero .wedding-announcement .couple-name-merried-text h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 90px;
+  font-size: 5rem;
+  color: #fff;
+  margin: 0 0 0.4em;
+  position: relative;
+  z-index: 10;
+}
+
+@media (max-width: 1199px) {
+  .hero .wedding-announcement .couple-name-merried-text h2 {
+    font-size: 70px;
+    font-size: 3.88889rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero .wedding-announcement .couple-name-merried-text h2 {
+    font-size: 55px;
+    font-size: 3.05556rem;
+  }
+}
+
+.hero .wedding-announcement .married-text h4 {
+  font-size: 26px;
+  font-size: 1.44444rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  display: inline;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 12px 20px;
+  position: relative;
+  z-index: 10;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 1199px) {
+  .hero .wedding-announcement .married-text h4 {
+    font-size: 20px;
+    font-size: 1.11111rem;
+    padding: 8px 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero .wedding-announcement .married-text h4 {
+    font-size: 17px;
+    font-size: 0.94444rem;
+    padding: 8px 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero .wedding-announcement .married-text h4 {
+    letter-spacing: 1px;
+  }
+}
+
+.hero .wedding-announcement .couple-name-merried-text h2,
+.hero .wedding-announcement .married-text h4 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.hero .wedding-announcement .couple-name-merried-text i {
+  font-size: 450px;
+  color: rgba(94, 154, 142, 0.7);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.hero .wedding-announcement .save-the-date {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  left: 50%;
+  bottom: -160px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+
+  -webkit-transition: 1s 2.3s ease-in-out;
+  -o-transition: 1s 2.3s ease-in-out;
+  transition: 1s 2.3s ease-in-out;
+}
+
+@media (max-width: 1199px) {
+  .hero .wedding-announcement .save-the-date {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero .wedding-announcement .save-the-date {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+.hero .wedding-announcement .save-the-date:before, .hero .wedding-announcement .save-the-date:after {
+  content: "";
+  position: absolute;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.hero .wedding-announcement .save-the-date:before {
+  background-color:rgba(195, 39, 43, 0.3);
+  width: 110%;
+  height: 110%;
+  left: -5%;
+  top: -5%;
+  -webkit-animation: save-the-date-pulse 1s infinite;
+  animation: save-the-date-pulse 1s infinite;
+}
+
+@media (max-width: 1199px) {
+  .hero .wedding-announcement .save-the-date:before {
+    width: 108%;
+    height: 108%;
+    left: -4%;
+    top: -4%;
+  }
+}
+
+.hero .wedding-announcement .save-the-date:after {
+  background-color: rgba(195, 39, 43, 0.7);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.hero .wedding-announcement .save-the-date h4 {
+  font-family: "Great Vibes", cursive;
+  font-size: 40px;
+  font-size: 2.22222rem;
+  color: #fff;
+  margin: 55px 0 0.2em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 1199px) {
+  .hero .wedding-announcement .save-the-date h4 {
+    font-size: 35px;
+    font-size: 1.94444rem;
+    margin: 45px 0 0.15em;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero .wedding-announcement .save-the-date h4 {
+    font-size: 28px;
+    font-size: 1.55556rem;
+    margin: 30px 0 0.15em;
+  }
+}
+
+.hero .wedding-announcement .save-the-date .date {
+  font-size: 20px;
+  font-size: 1.11111rem;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 1199px) {
+  .hero .wedding-announcement .save-the-date .date {
+    font-size: 18px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero .wedding-announcement .save-the-date .date {
+    font-size: 16px;
+    font-size: 0.88889rem;
+  }
+}
+
+.hero .wedding-announcement .popup-save-the-date {
+  bottom: -185px;
+  opacity: 1;
+  z-index: 50;
+}
+
+@media (max-width: 1199px) {
+  .hero .wedding-announcement .popup-save-the-date {
+    bottom: -180px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero .wedding-announcement .popup-save-the-date {
+    bottom: -170px;
+  }
+}
+
+@-webkit-keyframes save-the-date-pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(0.95, 0.95, 0.95);
+    transform: scale3d(0.95, 0.95, 0.95);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes save-the-date-pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(0.95, 0.95, 0.95);
+    transform: scale3d(0.95, 0.95, 0.95);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.static-hero {
+  background: url("../images/slider/slide-1.jpg") center cover no-repeat local;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+
+.static-hero:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.home-shade .static-hero {
+  opacity: 0.4;
+  z-index: 101;
+}
+
+
+////////////////////////////////////////////////
+///////////B&G AVTAR////////////////////////////
+.avtar-section {
+	background-color: #fff;
+}
+.avtar-section .collapse-link {
+	color: $color1;
+	&:focus {
+		outline: none;
+	}
+}
+.avatar-upload {
+    position: relative;
+    max-width: 205px;
+    margin: 50px auto;
+    .avatar-edit {
+        position: absolute;
+        right: 12px;
+        z-index: 1;
+        top: 10px;
+        input {
+            display: none;
+            + label {
+                display: inline-block;
+                width: 34px;
+                height: 34px;
+                margin-bottom: 0;
+                border-radius: 100%;
+                background: #FFFFFF;
+                border: 1px solid transparent;
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+                cursor: pointer;
+                font-weight: normal;
+                transition: all .2s ease-in-out;
+                &:hover {
+                    background: #f1f1f1;
+                    border-color: #d6d6d6;
+                }
+                &:after {
+                    content: "\f040";
+                    font-family: 'FontAwesome';
+                    color: #757575;
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    .avatar-preview {
+        width: 192px;
+        height: 192px;
+        position: relative;
+        border-radius: 100%;
+        border: 6px solid #F8F8F8;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+        > div {
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+.bride-groom-avtar-text {
+	font-family: "Great Vibes", cursive;
+	font-size: 2rem;
+}
+
+///////////////////////////////////////////
+/////////venue section////////////////////
+.venue-section {
+	background: url("https://www.shaadidukaan.com/free-wedding-templates/design1/images/slider/temp1.jpg");
+	color: $color2;
+}
+.fa-venue-icons {
+	font-size: 2rem;
+}
+.when-where-text {
+	font-family: "Great Vibes", cursive;
+	font-size: 3rem;
+	font-weight: 900;
+}
+
+.rsvp-button , #hide, #show{
+	margin-top: 30px;
+	background: inherit;
+	border: 1px solid $color2;
+	color: $color2;
+}
+
+
+/////////////footer///////////////////
+
+
+#mu-footer {
+	background-color: lighten(#901108, 12%);
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-footer-area{
+	display: inline;
+	float: left;
+	padding: 30px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.mu-footer-top {
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-social-media {
+	display: inline;
+	float: left;
+	padding: 10px 0;
+	width: 100%;
+}
+
+.mu-social-media a {
+	border: 1px solid #19191a;
+	border-radius: 50px;
+	color: #19191a;
+	display: inline-block;
+	font-size: 12px;
+	margin-right: 10px;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out 0s;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 15px;
+}
+.mu-social-media a:hover {
+	color: #901108;
+}
+.mu-footer-bottom {
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-copy-right {
+	margin-bottom: 0;
+}
+
+.mu-copy-right a {
+	font-weight: 600;
+	text-decoration: none!important;
+	color: #000;
+	transition: all 0.5s;
+
+}
+.mu-copy-right a:hover {
+	color: #901108;
+}
+
+//////////////////////////////////////
+/////////////itineary/////////////////
+.itinerary-section input[type=button] {
+  background: inherit;
+  cursor: pointer;
+  padding: 6px 18px;
+  border: 1px solid #901108;
+  border-radius: 10px;
+  outline: none;
+}
+.itinerary-section label {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  margin-right: 10px;
+}
+.itinerary-section input[type=text] {
+  margin-right: 10px;
+  border: none;
+  border-bottom: 1px solid #901108;
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+}
